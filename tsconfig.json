@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "module": "ESNext",
+    "target": "es5",
+    "jsx": "react",
+    // Копилятор будет обрабатывать не тольно TS файлы но и JS
+    "allowJs": true,
+    "moduleResolution": "node",
+    // позволяет работать с пакетами, котор используют commonJS как с обычными пакетпми с помощью mport (require() module.export)
+    // пример - бзе флага esModuleInterop -> результат будет undefined, с флагом [object, object]
+    "esModuleInterop": true,
+    //Если какая-либо библиотека не имеет default import, лоадер вроде ts-loader втоматически создают их,
+    // вместо такого импорта import * as React from 'react' можно писать такой импорт import React from 'react'
+    "allowSyntheticDefaultImports": true,
+    // Для абсолютного импорта
+    "baseUrl": "."
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
+}
