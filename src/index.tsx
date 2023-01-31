@@ -1,10 +1,8 @@
 import React from "react";
+import {createRoot} from 'react-dom/client';
 import {render} from "react-dom";
 import {Counter} from "./components/Counter";
 
-render(
-    <div>
-        <Counter/>
-    </div>,
-    document.getElementById('root')
-)
+const container = document.getElementById('root');
+const root = createRoot(container);
+root.render(<Counter/>);
