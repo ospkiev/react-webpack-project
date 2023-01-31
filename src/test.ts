@@ -1,4 +1,4 @@
 export function someFunc(arg: number): string {
-    console.log('TEST-77777777777777')
+    console.log('TEST-123456')
     return ''
 }
