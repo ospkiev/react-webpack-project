@@ -4,11 +4,13 @@
   background: var(--inverted-bg-color);
   display: flex;
   align-content: center;
-  padding: 20px;
+  padding: 5px;
 }
 
 .links {
   margin-left: auto;
+  display: flex;
+  align-items: center;
 }
 
 .mainLink {
