@@ -14,9 +14,7 @@
   position: absolute;
   bottom: 20px;
   display: flex;
-  width: 100%;
-}
-
-.lang {
-  margin-left: 20px;
+  flex-direction: column-reverse;
+  align-content: flex-start !important;
+  padding-left: 10px;
 }
